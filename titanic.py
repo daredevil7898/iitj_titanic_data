@@ -4,7 +4,7 @@ s = (df["Age"].median(numeric_only=True))
 print("Median Age : ",s)
 #1
 df = df.fillna({"Age":s})
-#print(df.to_string())
+print(df.to_string())
 #2
 survived = (df["Survived"].sum(numeric_only=True))
 total = 891
@@ -28,3 +28,4 @@ print("Survival rate of Class1 vs Class3 = ",survival_rate1/survival_rate3)
 #4 survival by gender
 gender_survial = df.groupby("Sex")
 print(gender_survial["Survived"].sum())
+
