@@ -29,3 +29,9 @@ print("Survival rate of Class1 vs Class3 = ",survival_rate1/survival_rate3)
 gender_survial = df.groupby("Sex")
 print(gender_survial["Survived"].sum())
 
+#5 filling up the values of cabin
+df = df.dropna(subset=["Cabin"])
+print(df["Cabin"].to_string())
+
+
+
