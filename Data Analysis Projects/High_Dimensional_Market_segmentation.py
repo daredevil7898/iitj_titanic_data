@@ -1,3 +1,4 @@
+#Predictive Demand & Autonomous Pricing Optimizer
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -67,3 +68,4 @@ aegis = PricingOptimizer()
 aegis.forecast_demand()
 aegis.dynamic_pricing_logic()
 aegis.plot_intelligence_dashboard()
+
